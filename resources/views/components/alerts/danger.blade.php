@@ -6,7 +6,7 @@
             <h3 class="text-red-800 font-semibold">
                 {!! $title !!}
             </h3>
-            <p class="mt-2 text-sm text-red-700">
+            <p class="mt-2 text-sm text-gray-700">
                 {!! $text !!}
             </p>
         </div>
