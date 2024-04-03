@@ -3,7 +3,7 @@
 <div class="relative" x-data="{ count: 0 }" x-init="count = $refs.counter.value.length">
     <textarea
         {{ $disabled ? 'disabled' : '' }}
-        {!! $attributes->merge(['class' => 'soft-scrollbar border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 rounded-lg shadow-sm']) !!}
+        {!! $attributes->merge(['class' => 'p-2 soft-scrollbar border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 rounded-lg shadow-sm']) !!}
         autocomplete="off"
         rows="4"
         x-ref="counter"

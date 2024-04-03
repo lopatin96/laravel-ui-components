@@ -3,7 +3,7 @@
 <div class="relative" x-data="{ count: 0 }" x-init="count = $refs.counter.value.length">
     <input
         {{ $disabled ? 'disabled' : '' }}
-        {!! $attributes->merge(['class' => 'border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 rounded-lg shadow-sm']) !!}
+        {!! $attributes->merge(['class' => 'p-2 border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 rounded-lg shadow-sm']) !!}
         x-ref="counter"
         x-on:keyup="count = $refs.counter.value.length"
     />
