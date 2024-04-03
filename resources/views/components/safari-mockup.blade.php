@@ -6,7 +6,7 @@
             <span class="size-3 bg-green-500 border border-green-600 rounded-full"></span>
         </div>
 
-        <div class="select-none text-gray-500 text-sm">
+        <div class="select-none text-gray-700 text-sm">
             {{ $title }}
         </div>
     </div>
