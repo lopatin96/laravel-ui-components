@@ -1,6 +1,6 @@
 @props(['text', 'position' => 'top'])
 
-<div class="relative group">
+<div class="relative group size-4">
     <svg
         class="size-4 opacity-25 hover:opacity-50 transition cursor-help"
         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
@@ -9,7 +9,7 @@
     </svg>
     <span
         class="
-            transition invisible opacity-0 group-hover:opacity-100 group-hover:visible absolute z-10 py-1 px-2 w-[220px] bg-gray-900 text-xs text-white rounded shadow-sm
+            transition invisible opacity-0 group-hover:opacity-100 group-hover:visible absolute z-10 py-1 px-2 w-[220px] bg-gray-900 text-xs text-white font-normal rounded shadow-sm
             @if($position === 'right')
                 -top-1 left-[110%]
             @elseif($position === 'left')
