@@ -1,10 +1,10 @@
 <ol class="flex items-center whitespace-nowrap" aria-label="Breadcrumb">
     @foreach($breadcrumbs as $breadcrumb)
-        @isset($breadcrumb['route'])
+        @if(isset($breadcrumb['route']) || isset($breadcrumb['href']))
             <li class="inline-flex items-center">
                 <a
                     class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-                    href="{{ route($breadcrumb['route']) }}"
+                    href="{{ isset($breadcrumb['route']) ? route($breadcrumb['route']) : $breadcrumb['href'] }}"
                 >
                     {{ $breadcrumb['title'] }}
                 </a>
