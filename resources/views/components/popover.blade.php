@@ -9,7 +9,7 @@
             </svg>
         </button>
 
-        <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-20 max-w-xs w-full bg-white border border-gray-100 text-start rounded-xl shadow-md" role="tooltip">
+        <div class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-20 max-w-lg w-full bg-white border border-gray-100 text-start rounded-xl shadow-md" role="tooltip">
             <div class="p-4">
                 {{ $slot }}
             </div>
