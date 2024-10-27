@@ -1,4 +1,4 @@
-<ol class="flex items-center whitespace-nowrap mx-5 sm:mx-0" aria-label="Breadcrumb">
+<ol class="flex items-center whitespace-nowrap" aria-label="Breadcrumb">
     @foreach($breadcrumbs as $breadcrumb)
         @if(isset($breadcrumb['route']) || isset($breadcrumb['href']))
             <li class="inline-flex items-center">
