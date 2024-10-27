@@ -8,7 +8,7 @@
         x-on:keyup="count = $refs.counter.value.length"
     />
     @if($counter)
-        <div class="absolute right-0 text-sm mt-1 text-gray-400">
+        <div class="absolute right-0 text-sm mt-1 text-gray-400 select-none cursor-default">
             <span x-html="count"></span> / <span x-html="$refs.counter.maxLength"></span>
         </div>
     @endif
