@@ -1,3 +1,6 @@
+# Installation
+To use some components (e.g. `popover`) you should to install preline (instruction for Laravel framework https://preline.co/docs/frameworks-laravel.html).
+
 # Components
 ## Breadcrumbs
 ```html
