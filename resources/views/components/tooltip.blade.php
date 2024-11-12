@@ -22,6 +22,6 @@
         "
         role="tooltip"
     >
-        {{ $text }}
+        {!! $text !!}
     </span>
 </div>
