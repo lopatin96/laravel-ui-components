@@ -1,18 +1,18 @@
 @props(['color' => 'blue', 'url', 'title', 'button', 'href'])
 
 <div class="flex items-center justify-between space-x-4 sm:space-x-10 border-y border-x-0 sm:border-x border-{{ $color }}-600 bg-gradient-to-br from-{{ $color }}-500 via-{{ $color }}-400 to-{{ $color }}-500 py-6 px-6 sm:px-10 sm:rounded-2xl w-full text-white">
-    <div class="flex flex-col gap-6">
-        <p class="font-semibold">
+    <div class="flex flex-col gap-4">
+        <span class="text-sm sm:text-base font-semibold bg-white/50 rounded-full p-1">
             {{ $url }}
-        </p>
-        <p class="text-gray-200 text-lg sm:text-lg text-white text-balance leading-5">
+        </span>
+        <p class="text-gray-200 text-sm sm:text-base text-white text-balance leading-5">
             {!! $title !!}
         </p>
         <a
             href="{{ $href }}"
             target="_blank"
             rel="noreferrer"
-            class="bg-gradient-to-br from-{{ $color }}-50 via-{{ $color }}-100 to-{{ $color }}-50 text-black bg-white hover:bg-gray-50 px-4 py-2 rounded-lg w-fit  ease duration-300 flex gap-1 items-center group"
+            class="text-sm sm:text-base bg-gradient-to-br from-{{ $color }}-50 via-{{ $color }}-100 to-{{ $color }}-50 text-black bg-white hover:bg-gray-50 px-4 py-2 rounded-lg w-fit ease duration-300 flex gap-1 items-center group"
         >
             <span>{!! $button !!}</span>
             <svg
