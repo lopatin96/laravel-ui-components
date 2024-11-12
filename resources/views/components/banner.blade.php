@@ -19,7 +19,7 @@
                 href="{{ $href }}"
                 target="_blank"
                 rel="noreferrer"
-                class="text-sm sm:text-base bg-gradient-to-br from-{{ $color }}-50 via-{{ $color }}-100 to-{{ $color }}-50 text-black bg-white hover:bg-gray-50 px-4 py-2 rounded-lg w-fit ease duration-300 flex gap-1 items-center group"
+                class="text-sm bg-gradient-to-br from-{{ $color }}-50 via-{{ $color }}-100 to-{{ $color }}-50 text-black bg-white hover:bg-gray-50 px-4 py-2 rounded-lg w-fit ease duration-300 flex gap-1 items-center group"
             >
                 <span>{!! $button !!}</span>
                 <svg
