@@ -1,8 +1,8 @@
 @props(['color' => 'blue', 'title', 'button', 'href'])
 
-<div class="relative flex items-center justify-between space-x-4 sm:space-x-10 border-y border-x-0 sm:border-x border-{{ $color }}-600 bg-gradient-to-br from-{{ $color }}-500 via-{{ $color }}-400 to-{{ $color }}-500 py-6 px-6 sm:px-10 sm:rounded-2xl w-full text-white">
+<div class="flex items-center justify-between space-x-4 sm:space-x-10 border-y border-x-0 sm:border-x border-{{ $color }}-600 bg-gradient-to-br from-{{ $color }}-500 via-{{ $color }}-400 to-{{ $color }}-500 py-6 px-6 sm:px-10 sm:rounded-2xl w-full text-white">
     <div class="flex flex-col gap-6">
-        <p class="text-gray-200 text-lg sm:text-2xl text-white font-semibold text-balance leading-5">
+        <p class="text-gray-200 text-lg sm:text-lg text-white font-semibold text-balance leading-5">
             {!! $title !!}
         </p>
         <a
@@ -23,8 +23,4 @@
     <div>
         {!! $slot !!}
     </div>
-    <span class="hidden sm:block flex absolute h-5 w-5 -top-2 -right-2">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-{{ $color }}-500 opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-5 w-5 bg-{{ $color }}-600"></span>
-    </span>
 </div>
