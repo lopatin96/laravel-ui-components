@@ -1,6 +1,6 @@
 @props(['color' => 'blue', 'title', 'button', 'href'])
 
-<div class="flex items-center justify-between space-x-4 sm:space-x-10 border border-{{ $color }}-600 bg-gradient-to-br from-{{ $color }}-500 via-{{ $color }}-400 to-{{ $color }}-500 py-6 px-6 sm:px-10 sm:rounded-2xl w-full text-white">
+<div class="flex items-center justify-between space-x-4 sm:space-x-10 border-y border-x-0 sm:border-x border-{{ $color }}-600 bg-gradient-to-br from-{{ $color }}-500 via-{{ $color }}-400 to-{{ $color }}-500 py-6 px-6 sm:px-10 sm:rounded-2xl w-full text-white">
     <div class="flex flex-col gap-6">
         <p class="text-gray-200 text-lg sm:text-lg text-white font-semibold text-balance leading-5">
             {!! $title !!}
