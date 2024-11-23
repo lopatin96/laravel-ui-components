@@ -1,15 +1,16 @@
-@props(['title', 'button', 'href'])
+@props(['title', 'button', 'href', 'color'])
 
-<div class="shadow-sm sm:rounded-2xl bg-white space-y-2 border-y border-x-0 sm:border-x py-3 px-5 sm:px-6">
-    <div class="flex flex-col gap-4">
-        <p class="text-gray-800 text-sm leading-snug">
+<div class="bg-{{ $color }}-50 sm:rounded-2xl space-y-2 border-y-2 border-x-0 sm:border-x-2 border-{{ $color }}-200 py-3 px-5">
+    <div class="flex justify-between items-center space-x-4">
+        <p class="text-gray-800 text-sm leading-snug text-balance">
             {!! $title !!}
         </p>
+
         <a
             href="{{ $href }}"
             target="_blank"
             rel="noreferrer"
-            class="text-sm text-black px-4 py-2 font-medium rounded-full border-2 border-dark w-fit ease duration-300 flex gap-1 items-center group"
+            class="shrink-0 text-sm text-black px-4 py-2 font-medium rounded-full border-2 border-{{ $color }}-200 w-fit ease duration-300 flex gap-1 items-center group"
         >
             <span>{!! $button !!}</span>
             <svg
