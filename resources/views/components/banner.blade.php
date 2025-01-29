@@ -1,8 +1,8 @@
-@props(['title', 'button', 'href', 'color'])
+@props(['title', 'button', 'href', 'color', 'verticalAlignment' => false])
 
 <div class="bg-{{ $color }}-50 sm:rounded-2xl space-y-2 border-y-2 border-x-0 sm:border-x-2 border-{{ $color }}-200 py-3 px-5">
-    <div class="flex justify-between items-center space-x-4">
-        <p class="text-gray-800 text-sm leading-snug text-balance">
+    <div class="flex @if($verticalAlignment) flex-col space-y-4 @else justify-between items-center space-x-4 @endif">
+        <p class="text-gray-800 text-sm leading-snug text-balance @if($verticalAlignment) text-justify @endif">
             {!! $title !!}
         </p>
 
