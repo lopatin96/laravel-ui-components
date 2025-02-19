@@ -4,7 +4,7 @@
             <li class="inline-flex items-center">
                 <a
                     class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-                    href="{{ isset($breadcrumb['route']) ? route($breadcrumb['route']) : $breadcrumb['href'] }}"
+                    href="{{ isset($breadcrumb['route']) ? route($breadcrumb['route'], $breadcrumb['parameters'] ?? []) : $breadcrumb['href'] }}"
                 >
                     {{ $breadcrumb['title'] }}
                 </a>
