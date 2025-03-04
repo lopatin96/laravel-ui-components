@@ -1,9 +1,11 @@
-<ol class="flex items-center whitespace-nowrap" aria-label="Breadcrumb">
+@props(['color' => 'blue'])
+
+<ol class="flex flex-wrap items-center" aria-label="Breadcrumb">
     @foreach($breadcrumbs as $breadcrumb)
         @if(isset($breadcrumb['route']) || isset($breadcrumb['href']))
             <li class="inline-flex items-center">
                 <a
-                    class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                    class="flex items-center text-sm text-gray-500 hover:text-{{ $color }}-600 focus:outline-none focus:text-{{ $color }}-600"
                     href="{{ isset($breadcrumb['route']) ? route($breadcrumb['route'], $breadcrumb['parameters'] ?? []) : $breadcrumb['href'] }}"
                 >
                     {{ $breadcrumb['title'] }}
