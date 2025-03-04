@@ -1,4 +1,4 @@
-@props(['color' => 'blue'])
+@props(['breadcrumbs', 'color' => 'blue'])
 
 <ol class="flex flex-wrap items-center" aria-label="Breadcrumb">
     @foreach($breadcrumbs as $breadcrumb)
